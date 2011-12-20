@@ -1,0 +1,5 @@
+kgpg (4:4.7.90-0ubuntu1) precise; urgency=low
+
+  * Initial package
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 16 Dec 2011 14:56:55 +0000
