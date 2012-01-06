@@ -8,8 +8,8 @@ Build-Depends: kde-sc-dev-latest (>= 4:4.7.95),
  kdelibs5-dev (>= 4:4.7), kdepimlibs5-dev (>= 4:4.7)
 Standards-Version: 3.9.2
 Homepage: http://www.kde.org/
-Vcs-Browser: http://bazaar.launchpad.net/~kubuntu-packagers/kgpg/ubuntu
-Vcs-Bzr: https://code.launchpad.net/~kubuntu-packagers/kgpg/ubuntu
+Vcs-Browser: http://bazaar.launchpad.net/~kubuntu-packagers/kubuntu-packaging/kgpg
+Vcs-Bzr: https://code.launchpad.net/~kubuntu-packagers/kubuntu-packaging/kgpg
 
 Package: kgpg
 Section: utils
