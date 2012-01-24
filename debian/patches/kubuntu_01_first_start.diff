@@ -1,0 +1,18 @@
+diff -urN kgpg-4.8.0/gpgproc.cpp ../kgpg/gpgproc.cpp
+--- kgpg-4.8.0/gpgproc.cpp	2011-11-17 20:58:24.000000000 +0000
++++ kgpg-4.8.0/gpgproc.cpp	2012-01-24 15:59:46.000000000 +0000
+@@ -86,9 +86,11 @@
+ 	m_standardArguments.clear();
+ 	m_standardArguments << QLatin1String( "--no-secmem-warning" )
+ 			<< QLatin1String( "--no-tty" )
+-			<< QLatin1String("--no-greeting")
+-			<< QLatin1String("--options")
+-			<< gpgConfigFile;
++			<< QLatin1String("--no-greeting");
++
++	if (!gpgConfigFile.isEmpty())
++		m_standardArguments << QLatin1String("--options")
++				<< gpgConfigFile;
+ 
+ 	QStringList debugLevelArguments(QLatin1String("--debug-level"));
+ 	debugLevelArguments << QLatin1String("none");
