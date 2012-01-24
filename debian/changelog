@@ -1,3 +1,9 @@
+kgpg (4:4.8.0a-0ubuntu1~ppa1) precise; urgency=low
+
+  * New tar, remove kubuntu_01_first_start.diff
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 24 Jan 2012 18:48:15 +0000
+
 kgpg (4:4.8.0-0ubuntu1~ppa2) precise; urgency=low
 
   * Add kubuntu_01_first_start.diff from branch fix
