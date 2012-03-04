@@ -3,9 +3,9 @@ Section: kde
 Priority: optional
 Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
 XSBC-Original-Maintainer: Jonathan Riddell <jriddell@ubuntu.com>
-Build-Depends: kde-sc-dev-latest (>= 4:4.7.95),
+Build-Depends: kde-sc-dev-latest (>= 4:4.8.1),
  cmake, debhelper (>= 7.3.16), pkg-kde-tools (>= 0.12),
- kdelibs5-dev (>= 4:4.7), kdepimlibs5-dev (>= 4:4.7)
+ kdelibs5-dev (>= 4:4.8.1), kdepimlibs5-dev (>= 4:4.8.1)
 Standards-Version: 3.9.2
 Homepage: http://www.kde.org/
 Vcs-Browser: http://bazaar.launchpad.net/~kubuntu-packagers/kubuntu-packaging/kgpg

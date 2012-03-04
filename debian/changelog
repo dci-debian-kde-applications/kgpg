@@ -1,4 +1,10 @@
-kgpg (4:4.8.0a-0ubuntu1~ppa1) precise; urgency=low
+kgpg (4:4.8.1-0ubuntu1) UNRELEASED; urgency=low
+
+  * New upstream release 
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Sun, 04 Mar 2012 21:48:27 +0100
+
+kgpg (4:4.8.0a-0ubuntu1) precise; urgency=low
 
   * New upstream release
 
