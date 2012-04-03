@@ -30,8 +30,7 @@ Package: kgpg-dbg
 Section: debug
 Architecture: any
 Priority: extra
-Depends: ${misc:Depends}, kde-runtime-dbg
-Suggests: kgpg (= ${source:Version})
+Depends: ${misc:Depends}, kgpg (= ${binary:Version})
 Description: debugging symbols for kgpg
  This package contains debugging files used to investigate problems with
  binaries included in kgpg.
