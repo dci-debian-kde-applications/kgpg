@@ -33,6 +33,7 @@ Priority: extra
 Depends: ${misc:Depends}, kde-runtime-dbg
 Suggests: kgpg (= ${source:Version})
 Description: debugging symbols for kgpg
- This package contains debugging files used to investigate problems with binaries included in kgpg.
+ This package contains debugging files used to investigate problems with
+ binaries included in kgpg.
  .
  This package is part of the KDE SC utilities module.
