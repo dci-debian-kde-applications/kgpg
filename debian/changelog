@@ -1,0 +1,606 @@
+kdeutils (4:4.7.4-2) unstable; urgency=low
+
+  * Team upload. Upload to unstable.
+
+  [ Pino Toscano ]
+  * Switch the libgmp3-dev build dependency to libgmp-dev.
+
+ -- Ana Beatriz Guerrero Lopez <ana@debian.org>  Wed, 07 Mar 2012 11:00:59 +0100
+
+kdeutils (4:4.7.4-1) experimental; urgency=low
+
+  * New upstream relese:
+    - fix German name of kwalletmanager. (Closes: #641039)
+
+  [ Eshat Cakar ]
+  * Bump kde-sc-dev-latest build dependency to 4:4.7.4.
+  * Remove CVE-2011-2725_4.6.diff (applied upstream).
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 18 Dec 2011 01:37:56 +0100
+
+kdeutils (4:4.7.2-1) experimental; urgency=low
+
+  [ Eshat Cakar ]
+  * New upstream release.
+  * Add myself to uploaders.
+  * Remove kcalc_key_bindings.diff (applied upstream).
+  * Bump kde-sc-dev-latest build dependency to 4:4.7.2.
+  * Bump kdelibs5-dev build dependency to 4:4.7.
+  * Bump kdepimlibs5-dev build dependency to 4:4.7.
+  * Bump libkonq5-dev build dependency to 4:4.7.
+  * Remove kdebase-workspace-dev build dependency and
+    add remove_workspace.patch to fix it in CMakeLists (thanks Pino).
+  * Remove ${shlibs:Depends} from kdeutils-dbg and printer-applet.
+
+  [ Pino Toscano ]
+  * printer-applet: recommend system-config-printer-kde instead of
+    system-config-printer. (Closes: #646786)
+  * Manage some packages renamings (Closes: #650008):
+    - kdeutils-dbg depends on kde-runtime-dbg instead of kdebase-runtime-dbg.
+    - plasma-scriptengine-superkaramba suggests kde-workspace-bin instead of
+      kdebase-workspace-bin.
+
+  [ José Manuel Santamaría Lema ]
+  * Add libxtst-dev build depend.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 03 Dec 2011 10:43:15 -0300
+
+kdeutils (4:4.6.5-4) unstable; urgency=high
+
+  [ Pino Toscano ]
+  * Backport the upstream r1259334 from the 4.6 branch to fix the Ark
+    directory traversal, CVE-2011-2725. (Closes: #635541)
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 03 Dec 2011 12:32:27 +0100
+
+kdeutils (4:4.6.5-3) unstable; urgency=low
+
+  [ Pino Toscano ]
+  * Explicitly build-depend on libbz2-dev and zlib1g-dev, as they are needed
+    for ark and no more implicitly provided by libarchive-dev.
+    (Closes: #642815)
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 04 Oct 2011 15:52:38 +0200
+
+kdeutils (4:4.6.5-2) unstable; urgency=low
+
+  [ José Manuel Santamaría Lema ]
+  * Add kcalc_key_bindings.diff which reverts a faulty upstream commit
+    which broke the key bindings in kcalc.
+
+  [ Modestas Vainius ]
+  * Switch the package to dh_python2 and actually byte-compile private py files
+    in the process.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 20 Jul 2011 00:31:34 +0300
+
+kdeutils (4:4.6.5-1) unstable; urgency=low
+
+  * New upstream release:
+    - ark now supports password-protected archives correctly (Closes: #451926)
+
+  [ José Manuel Santamaría Lema ]
+  * Bump build dependency on kde-sc-dev-latest to 4:4.6.5.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 18 Jul 2011 21:54:01 +0300
+
+kdeutils (4:4.6.3-1) unstable; urgency=low
+
+  * New upstream release.
+
+  [ Pino Toscano ]
+  * Lower kfloppy as suggest for the kdeutils metapackage, as it is no more
+    worth than that, nowadays. (Closes: #623778)
+
+  [ José Manuel Santamaría Lema ]
+  * Bump build dependency on kde-sc-dev-latest to 4:4.6.3.
+  * Bump Standards-Version to 3.9.2; no changes needed.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 26 May 2011 02:41:41 +0300
+
+kdeutils (4:4.6.2-1) experimental; urgency=low
+
+  * New upstream release:
+    - fixes creation of DSA&ElGamal keys in kgpg (Closes: #597001)
+  * Update installed files.
+
+  [ Modestas Vainius ]
+  * Point debian/control Vcs fields to the new Git repository.
+  * Switch debian/rules engine to dhmk based qt-kde-team/2/*.
+  * Remove redundant links to deprecated common-licenses/BSD.
+  * Fix grammar error in the kremotecontrol description.
+
+  [ George Kiagiadakis ]
+  * Add myself to uploaders.
+  * Bump build dependencies on other kde-sc components to version 4:4.6.
+  * Add new kremotecontrol package and make kdelirc a transitional package.
+  * Remove unused build dependency on libsnmp-dev.
+  * Add build dependency on python-dev, needed for superkaramba.
+  * s/KDE/KDE SC/ in all package descriptions.
+
+  [ José Manuel Santamaría Lema ]
+  * Remove package okteta.
+  * Add package filelight.
+  * Remove unused build dependency on libqca2-dev.
+  * Bump build dependency on kde-sc-dev-latest to 4:4.6.2.
+  * Bump S-V to 3.9.1; update Replaces/Breaks/Conflicts.
+  * Add debhelper depends substvars to kdeutils and kdeutils-dbg.
+  * Add lintian-overrides files.
+  * Add myself to Uploaders.
+
+  [ Pino Toscano ]
+  * Use wildcard architectures:
+    - kfreebsd-i386 kfreebsd-amd64 -> kfreebsd-any
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 27 Apr 2011 12:23:45 +0300
+
+kdeutils (4:4.4.5-1) unstable; urgency=low
+
+  [ Modestas Vainius ]
+  * New upstream release.
+  * Bump kde-sc-dev-latest build dependency to 4:4.4.5.
+
+  [ Sune Vuorela ]
+  * Update email address
+  * Update descriptions
+
+ -- Sune Vuorela <sune@debian.org>  Sun, 18 Jul 2010 14:21:55 +0200
+
+kdeutils (4:4.4.4-1) unstable; urgency=low
+
+  * New upstream release.
+
+  [ Modestas Vainius ]
+  * Bump pkg-kde-tools build dependency to (>= 0.9) for HTML_INSTALL_DIR
+    switch and 3.0 (quilt) source format support.
+  * Switch to 3.0 (quilt) source package format and original tar.bz2
+    tarballs.
+  * Replace usr/share/doc/kde4 references with usr/share/doc/kde.
+  * Drop quilt from Build-Depends, no longer needed for 3.0 (quilt).
+  * Remove debian/README.source. Patch support is part of source format
+    now.
+  * Move debian/source.lintian-overrides to debian/source/lintian-overrides.
+  * Bump kde-sc-dev-latest build dependency to 4:4.4.4.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 01 Jun 2010 01:15:20 +0300
+
+kdeutils (4:4.4.3-1) unstable; urgency=low
+
+  * New upstream release.
+
+  [ Modestas Vainius ]
+  * Bump kde-sc-dev-latest build dependency to 4.4.3.
+  * Release KDE SC 4.4.3 to unstable.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 01 May 2010 23:37:57 +0300
+
+kdeutils (4:4.4.2-1) experimental; urgency=low
+
+  * New upstream release:
+    - Fixes paint recursion in "three bullet" password mode. (Closes: #525540)
+    - kgpg now handles 8-bit messages from gpg --decrypt properly.
+      (Closes: #538510)
+
+  [ Modestas Vainius ]
+  * Add myself as uploader.
+  * Fix Vcs-Browser URL.
+  * libkdeinit4_*.so have been moved to private directory (Closes: #553114);
+  * Add cmake to Build-Depends.
+  * Add kde-sc-dev-latest (>= 4:4.4.2) to Build-Depends.
+  * Bump Standards-Version to 3.8.4: no changes needed.
+  * Bump KDE build dependencies to 4:4.4.
+  * Bump pkg-kde-tools build dependency to 0.6.4.
+
+  [ Pino Toscano ]
+  * Fix typos in okteta's description. (Closes: #569074)
+
+  [ Sune Vuorela ]
+  * Kdessh is finally gone. Remove the packages.
+  * Remove libknotification-dev from build-deps. Not used
+  * Update installed files
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 09 Apr 2010 18:40:24 +0300
+
+kdeutils (4:4.3.4-2) unstable; urgency=low
+
+  +++ Changes by Modestas Vainius:
+
+  * Build depend on libkvm-dev on kfreebsd-*. Needed by superkaramba
+    (Closes: #560407).
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 11 Dec 2009 02:28:59 +0200
+
+kdeutils (4:4.3.4-1) unstable; urgency=low
+
+  * New upstream release.
+
+  +++ Changes by Pino Toscano:
+
+  * Add liblzma-dev build-depend to add XZ support in Ark.
+
+  +++ Changes by Ana Beatriz Guerrero Lopez:
+
+  * Remove myself from Uploaders.
+
+  +++ Changes by Modestas Vainius:
+
+  * Bump KDE build dependencies to current version.
+  * Update install files.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 09 Dec 2009 00:24:12 +0200
+
+kdeutils (4:4.3.2-1) unstable; urgency=low
+
+  * New upstream release.
+
+  +++ Changes by Karl Ferdinand Ebert:
+
+  * Add source.lintian-overrides to ignore lintian warning about missing
+    debug depends.
+
+  +++ Changes by Ana Beatriz Guerrero Lopez:
+
+  * Bump KDE build dependencies to 4.3.2. Add versioned build depend to
+    libknotificationitem-1-dev as well.
+  * Remove 01_fix_kscd.profile.xml.diff patch, merged upstream.
+  * Update okteta.install
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 15 Oct 2009 19:25:09 +0200
+
+kdeutils (4:4.3.1-1) unstable; urgency=low
+
+  * New upstream release.
+
+  +++ Changes by Fathi Boudra:
+
+  * Bump KDE build dependencies to 4.3.1.
+  * Bump Standards-Version to 3.8.3 (no changes needed).
+  * Update debian/kdelirc.install file.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 31 Aug 2009 12:03:34 +0200
+
+kdeutils (4:4.3.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * Update debian/copyrights: years and copyright word.
+  * Bump build dependencies to >= 4.3.0.
+
+ -- Ana Beatriz Guerrero Lopez <ana@debian.org>  Tue, 04 Aug 2009 09:21:42 +0200
+
+kdeutils (4:4.2.96-1) experimental; urgency=low
+
+  * New upstream release.
+  * Drop backported patch from upstream.
+  * Update debian/control:
+    - Add libknotificationitem-1-dev, libkonq5-dev and libqca2-dev build
+      dependencies.
+    - Remove libzip-dev build dependency, replaced by a cli plugin.
+    - Bump Standards-Version from 3.8.1 to 3.8.2 (no changes needed).
+    - Add kdelirc package.
+  * Update debian/copyright: add kdelirc copyrights.
+  * Update installed files.
+
+ -- Fathi Boudra <fabo@debian.org>  Wed, 15 Jul 2009 09:33:24 +0200
+
+kdeutils (4:4.2.4-1) unstable; urgency=low
+
+  * New upstream release.
+
+  +++ Changes by Sune Vuorela:
+
+  * Fix sections.
+  * Backport a patch to write better xml in kwalletmanager.
+    (Closes: 530419)
+
+  +++ Changes by Fathi Boudra:
+
+  * Bump Standards-Version from 3.8.0 to 3.8.1 (no changes needed).
+
+  +++ Changes by Pino Toscano:
+
+  * Remove ncompress and zoo from ark recommends.
+  * Add rar and  unrar | unrar-free to ark suggests.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 02 May 2009 12:35:15 +0200
+
+kdeutils (4:4.2.2-1) unstable; urgency=low
+
+  * New upstream release:
+    - Fix message "decryption failed" when verifying an untrusted signature.
+     (Closes: #398293)
+    - Fix default server duplication in preferences dialog. (Closes: #427404)
+  * Update installed files in kwalletmanager.install.
+
+ -- Ana Beatriz Guerrero Lopez <ana@debian.org>  Sun, 05 Apr 2009 13:08:10 +0200
+
+kdeutils (4:4.2.1-1) experimental; urgency=low
+
+  * New upstream release.
+
+  +++ Changes by Modestas Vainius:
+
+  * Rename superkaramba to plasma-scriptengine-superkaramba. Tweak its
+    description. Do not leave dummy package.
+  * Point Debian Vcs URLs to pkg-kde/trunk (new location).
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 05 Mar 2009 13:13:45 +0100
+
+kdeutils (4:4.2.0-1) experimental; urgency=low
+
+  * New upstream release.
+
+  +++ Changes by Modestas Vainius:
+
+  * Drop 97_fix_target_link_libraries.diff, no longer needed.
+  * Bump KDE build depends to 4:4.2.0.
+  * Set INSTALL_PRINTER_APPLET to TRUE to force installation of printer-applet
+    despite missing build dependencies. Drop all python related build depends
+    except python-support.
+  * Bump Standards-Version to 3.8.0: add README.source.
+  * Do not build depend on cmake explicitly.
+  * Update install files and add debian/installgen.
+  * Printer applet recommends hal-cups-utils and system-config-printer for
+    auto printer configuration.
+  * Do not build depend on libplasma-dev. Plasma headers are in kdelibs5-dev
+    for now.
+  * Bump debian/compat and debhelper build dependency to v7 (to get more
+    sophisticated debian/tmp handling).
+  * Switch from internal debian/cdbs/kde.mk to pkg-kde-tools:
+    - build depend on pkg-kde-tools 0.4;
+    - remove debian/cdbs directory;
+    - replace debian/cdbs/kde.mk with
+      /usr/share/pkg-kde-tools/qt-kde-team/1/debian-qt-kde.mk in debian/rules.
+
+  +++ Changes by Ana Beatriz Guerrero Lopez:
+
+  * Fix typo in the printer-applet description (Closes: #509241).
+
+  +++ Changes by Sune Vuorela:
+
+  * Update copyright file.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 26 Jan 2009 22:04:28 +0100
+
+kdeutils (4:4.1.4-1) experimental; urgency=low
+
+  * New upstream
+    - bump build-dep
+
+ -- Sune Vuorela <debian@pusling.com>  Sat, 10 Jan 2009 19:43:37 +0100
+
+kdeutils (4:4.1.3-2) experimental; urgency=low
+
+  * Build the printer applet
+
+ -- Sune Vuorela <debian@pusling.com>  Sun, 30 Nov 2008 18:41:12 +0100
+
+kdeutils (4:4.1.3-1) experimental; urgency=low
+
+  * New upstream
+    - bump build-deps
+    - blockdevices doc => kdf
+
+ -- Sune Vuorela <debian@pusling.com>  Sat, 01 Nov 2008 19:42:23 +0100
+
+kdeutils (4:4.1.2-1) experimental; urgency=low
+
+  * New upstream release.
+  * Improve okteta's description.
+
+ -- Ana Beatriz Guerrero Lopez <ana@debian.org>  Tue, 30 Sep 2008 18:16:22 +0200
+
+kdeutils (4:4.1.1-1) experimental; urgency=low
+
+  * New upstream release
+  * Remove 97_fix_target_link_libraries.diff, implemented upstram
+  * Remove kdeutils-dev, useless.
+
+ -- Sune Vuorela <debian@pusling.com>  Fri, 29 Aug 2008 11:39:50 +0200
+
+kdeutils (4:4.1.0-1) experimental; urgency=low
+
+  * New upstream release.
+  * Update installed files and build depends versions.
+
+ -- Ana Beatriz Guerrero Lopez <ana@debian.org>  Mon, 28 Jul 2008 02:06:25 +0200
+
+kdeutils (4:4.0.98-1) experimental; urgency=low
+
+  * New upstream release, Release Candidate 1.
+
+ -- Ana Beatriz Guerrero Lopez <ana@debian.org>  Mon, 14 Jul 2008 23:01:27 +0200
+
+kdeutils (4:4.0.84-1) experimental; urgency=low
+
+  * New upstream snapshot.
+
+  +++ Changes by Fathi Boudra:
+
+  * Add okteta to kdeutils meta package.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 29 Jun 2008 01:47:14 +0200
+
+kdeutils (4:4.0.82+svn819867-1) experimental; urgency=low
+
+  * New upstream snapshot.
+  * Update build dependencies:
+    - Bump kdepimlibs5-dev to (>= 4:4.0.82).
+    - Add libplasma-dev.
+  * Update superkaramba.install to install plasmoid related files.
+
+ -- Ana Beatriz Guerrero Lopez <ana@debian.org>  Sun, 15 Jun 2008 20:23:57 +0200
+
+kdeutils (4:4.0.80-1) experimental; urgency=low
+
+  * New upstream snapshot.
+  * Remove kjots.
+
+ -- Fathi Boudra <fabo@debian.org>  Sun, 25 May 2008 12:06:53 +0200
+
+kdeutils (4:4.0.74-1) experimental; urgency=low
+
+  * New upstream snapshot.
+  * Remove kmilo package, removed upstream.
+
+ -- Fathi Boudra <fabo@debian.org>  Sun, 18 May 2008 14:50:52 +0200
+
+kdeutils (4:4.0.72-1) experimental; urgency=low
+
+  * New upstream snapshot.
+    - new application: okteta
+
+  +++ Changes by Sune Vuorela:
+
+  * Add target_link_library patch.
+  * Add libxrender-dev build dependency.
+    superkaramba includes headers from here.
+  * Fix kmilo install dir.
+
+  +++ Changes by Fathi Boudra:
+
+  * Add libx11-dev and libxrender-dev build-dependencies.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 01 May 2008 17:03:15 +0200
+
+kdeutils (4:4.0.68+svn794641-1) experimental; urgency=low
+
+  * New upstream snapshot.
+  * Add versioned build depend on libqimageblitz-dev from experimental.
+  * Add Recommends: to ark with most popular uncompress software.
+
+ -- Ana Beatriz Guerrero Lopez <ana@debian.org>  Wed, 09 Apr 2008 13:51:47 +0200
+
+kdeutils (4:4.0.66+svn791114-1) experimental; urgency=low
+
+  * First KDE 4.1 snapshot packaged.
+  * Update installed files.
+
+ -- Ana Beatriz Guerrero Lopez <ana@debian.org>  Sun, 30 Mar 2008 12:56:22 +0200
+
+kdeutils (4:4.0.2-1) experimental; urgency=low
+
+  * New upstream release.
+
+  +++ Changes by Ana Beatriz Guerrero Lopez:
+
+  * Bump build-depends to >= 4:4.0.2.
+  * Update kcalc.install.
+
+  +++ Changes by Matthew Rosewarne:
+
+  * Move kdeutils-dev to Section: libdevel.
+  * Move ark, kcharselect, kdf, kgpg, kmilo, ktimer, and sweeper
+    to Section: utils.
+  * Move kcalc to Section: math.
+  * Move kdessh to Section: net.
+  * Move kfloppy to Section: admin.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 05 Mar 2008 21:10:42 +0100
+
+kdeutils (4:4.0.1-1) experimental; urgency=low
+
+  * New upstream release.
+
+  +++ Changes by Matthew Rosewarne:
+
+  * Tweak package descriptions.
+  * Merged kwikdisk into kdf package.
+  * Use source:Version for kdeutils metapackage.
+  * More specific dependencies for kdesdk-dev.
+  * Add Suggests: kdeutils to kdeutils-dbg.
+
+  +++ Changes by Ana Beatriz Guerrero Lopez:
+
+  * Bump compat/debhelper 6.
+  * Bump build-depends to >= 4:4.0.1.
+
+  +++ Changes by Fathi Boudra:
+
+  * Add Vcs-Browser and Vcs-Svn fields.
+  * Update installed files.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 06 Feb 2008 14:24:29 +0100
+
+kdeutils (4:4.0.0-1) experimental; urgency=low
+
+  * New uptream release.
+
+  +++ Changes by Ana Beatriz Guerrero Lopez:
+
+  * Bump build-depends to >=4:4.0.0-1.
+  * Update kgpg.install.
+
+  +++ Changes by Matthew Rosewarne:
+
+  * Add Homepage: to control.
+  * Change kdeutils-dbg Depends from kdelibs-dbg to kdebase-runtime-dbg.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 05 Jan 2008 14:54:02 +0100
+
+kdeutils (4:3.98.0~svn755919-1) experimental; urgency=low
+
+  * New svn snapshot release to revision 755919.
+  * Remove kregexpeditor and khexedit, it was moved out by upstream.
+  * Update years in copyright.
+
+ -- Ana Beatriz Guerrero Lopez <ana@debian.org>  Thu, 03 Jan 2008 20:12:07 +0100
+
+kdeutils (4:3.98.0~svn753247-1) experimental; urgency=low
+
+  * Svn snapshot of revision 753247.
+
+  +++ Changes by Ana Beatriz Guerrero Lopez:
+
+  * Add build-depend on libarchive-dev.
+  * Update *.install files.
+  * Remove LDFLAGS+="-Wl,--as-needed". It was integrated into
+    cdbs/kde.mk.
+
+  +++ Changes by Matthew Rosewarne:
+
+  * Add kdeutils-dbg package.
+  * Move handbooks into respective packages & remove kdeutils-doc package.
+  * Change ${Source-Version} to ${binary:Version}
+  * Wrap lines in control.
+  * Add self to uploaders.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 28 Dec 2007 19:10:59 +0100
+
+kdeutils (4:3.97.0-1) experimental; urgency=low
+
+  * New upstream release.
+  * Update Standards-Version to 3.7.3.
+  * Update *.install files.
+  * Add export LDFLAGS+="-Wl,--as-needed" in rules to make dpkg-shlibdeps
+    happier.
+
+ -- Ana Beatriz Guerrero Lopez <ana@debian.org>  Sat, 08 Dec 2007 02:04:40 +0100
+
+kdeutils (4:3.96.0-1) experimental; urgency=low
+
+  * New upstream release.
+
+  +++ Changes by Ana Beatriz Guerrero Lopez:
+
+  * Build depend on kdelibs5-dev >= 4:3.96.0-1
+  * Update *.install files.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 14 Nov 2007 20:45:22 +0100
+
+kdeutils (4:3.95.0-1) experimental; urgency=low
+
+  * KDE4 beta 4, first upload to the Debian archive.
+
+  +++ Changes by Ana Beatriz Guerrero Lopez:
+
+  * Update build-dep:
+    * Add libqimageblitz-dev, libsnmp-dev and libzip-dev.
+    * Remove tpctl.
+  * Rework packages description.
+  * Complete copyright file.
+
+  +++ Changes by Fathi Boudra:
+
+  * Split kdeutils in multiple packages.
+
+ -- Debian Qt/KDE Maintainers <ana@debian.org>  Wed, 31 Oct 2007 17:52:19 +0100

@@ -1,0 +1,11 @@
+#dev .so symlinks, we aren't shipping dev suff for these
+./usr/lib/libkerfuffle.so
+./usr/lib/libsuperkaramba.so
+./usr/lib/liblibkremotecontrol.so
+
+#libkdeinit things, handled differently
+./usr/lib/libkdeinit4_kcalc.so
+
+#manpages, actually installed but compressed
+./usr/share/man/man1/ark.1
+

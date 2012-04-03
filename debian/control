@@ -1,0 +1,216 @@
+Source: kdeutils
+Section: kde
+Priority: optional
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Fathi Boudra <fabo@debian.org>, Sune Vuorela <sune@debian.org>, Modestas Vainius <modax@debian.org>,
+ George Kiagiadakis <kiagiadakis.george@gmail.com>, José Manuel Santamaría Lema <panfaust@gmail.com>,
+ Eshat Cakar <info@eshat.de>
+Build-Depends: kde-sc-dev-latest (>= 4:4.7.4),
+ cmake, debhelper (>= 7.3.16), pkg-kde-tools (>= 0.12),
+ kdelibs5-dev (>= 4:4.7), kdepimlibs5-dev (>= 4:4.7),
+ libgmp-dev, libqimageblitz-dev (>= 1:0.0.4-2),
+ libarchive-dev, libx11-dev, libxrender-dev, python-dev,
+ libkonq5-dev (>= 4:4.7), liblzma-dev, libkvm-dev [kfreebsd-any],
+ libbz2-dev, zlib1g-dev, libxtst-dev
+Standards-Version: 3.9.2
+Homepage: http://www.kde.org/
+Vcs-Browser: http://git.debian.org/?p=pkg-kde/kde-sc/kdeutils.git
+Vcs-Git: git://git.debian.org/pkg-kde/kde-sc/kdeutils.git
+
+Package: kdeutils
+Architecture: all
+Depends: ${misc:Depends},
+ ark (>= ${source:Version}), kcalc (>= ${source:Version}),
+ kcharselect (>= ${source:Version}), kremotecontrol (>= ${source:Version}),
+ kdf (>= ${source:Version}),
+ kgpg (>= ${source:Version}), ktimer (>= ${source:Version}),
+ kwalletmanager (>= ${source:Version}),
+ plasma-scriptengine-superkaramba (>= ${source:Version}), sweeper (>= ${source:Version}),
+ filelight (>= ${source:Version})
+Suggests: kfloppy (>= ${source:Version})
+Description: general-purpose utilities from the official KDE SC release
+ This metapackage includes general-purpose utilities provided with the
+ official release of KDE SC.
+
+Package: kdeutils-dbg
+Section: debug
+Architecture: any
+Priority: extra
+Depends: ${misc:Depends}, kde-runtime-dbg
+Suggests: kdeutils (= ${source:Version})
+Description: debugging symbols for the KDE SC utilities module
+ This package contains debugging files used to investigate problems with
+ binaries included in the KDE SC utilities module.
+
+
+Package: ark
+Section: utils
+Architecture: any
+Recommends: bzip2, p7zip-full, zip, unzip
+Suggests: rar, unrar | unrar-free
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: archive utility 
+ Ark manages various archive formats, including tar, gzip, bzip2, rar and zip,
+ as well as CD-ROM images.  Ark can be used to browse, extract, create, and
+ modify archives.
+ .
+ This package is part of the KDE SC utilities module.
+
+Package: kcalc
+Section: math
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: simple and scientific calculator
+ KCalc is a scientific calculator.
+ .
+ KCalc provides:
+  * Trigonometric functions, logic operations, and statistical calculations
+  * Calculation in decimal, hexadecimal, octal, and binary bases
+  * Memory functions for storing results
+  * A comprehensive collection of mathematical constants
+ .
+ This package is part of the KDE SC utilities module.
+
+Package: kcharselect
+Section: utils
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: special character utility
+ KCharSelect is a utility for finding special characters which are not
+ available on the keyboard.  It can search for characters by Unicode number,
+ display characters in any font, and copy characters to the clipboard so they
+ can be pasted into documents.
+ .
+ This package is part of the KDE SC utilities module.
+
+Package: kremotecontrol
+Section: utils
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Recommends: lirc
+Description: frontend for using remote controls
+ KRemoteControl is a KDE frontend for your remote controls. It allows you
+ to configure actions for button presses on remotes. All types of remotes
+ supported by Solid are also supported by KRemoteControl.
+ .
+ KRemoteControl consists of the following parts:
+  * a control module that allows one to create and assign actions.
+  * a kded module responsible for executing the actions.
+  * a system tray applet for visual feedback.
+  * a plasma data engine for interacting with remotes from plasmoids.
+ .
+ This package is part of the KDE SC utilities module.
+
+Package: kdelirc
+Section: utils
+Architecture: all
+Depends: kremotecontrol (>= ${source:Version}), ${misc:Depends}
+Description: transitional package for kremotecontrol
+ This is a transitional package provided to ease upgrade from kdelirc
+ to the new kremotecontrol. You can safely remove it if you want.
+ .
+ This package is part of the KDE SC utilities module.
+
+Package: kdf
+Section: utils
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: disk information utility
+ KDiskFree displays information about hard disks and other storage devices,
+ including the amount of free space available.  It can also mount and unmount
+ storage devices and view them in the file manager.
+ .
+ KwikDisk is an icon for the system tray that provides convenient access to
+ the features of KDiskFree.
+ .
+ This package is part of the KDE SC utilities module.
+
+Package: kfloppy
+Section: utils
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: floppy formatter
+ Kfloppy is a utility for formatting floppy disks.
+ .
+ This package is part of the KDE SC utilities module.
+
+Package: kgpg
+Section: utils
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: graphical front end for GNU Privacy Guard
+ Kgpg manages cryptographic keys for the GNU Privacy Guard, and can encrypt,
+ decrypt, sign, and verify files.  It features a simple editor for applying
+ cryptography to short pieces of text, and can also quickly apply cryptography
+ to the contents of the clipboard.
+ .
+ This package is part of the KDE SC utilities module.
+
+Package: ktimer
+Section: utils
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: countdown timer
+ KTimer is a countdown timer for running commands after a delay.
+ The countdown can be paused or set to loop continuously.
+ .
+ This package is part of the KDE SC utilities module.
+
+Package: kwalletmanager
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Section: utils
+Description: secure password wallet manager
+ The KDE Wallet system provides a secure way to store passwords and other
+ secret information, allowing the user to remember only a single KDE Wallet
+ password instead of numerous different passwords and credentials.
+ .
+ KWallet Manager is a utility for viewing and editing information stored in
+ the KDE Wallet.
+ .
+ This package is part of the KDE SC utilities module.
+
+Package: plasma-scriptengine-superkaramba
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Suggests: kde-workspace-bin
+Replaces: superkaramba
+Breaks: superkaramba
+Description: SuperKaramba theme support for the Plasma Workspaces
+ This package provides SuperKaramba scriptengine for Plasma. It brings
+ support for the SuperKaramba interactive desktop applets, called "themes", to
+ the Plasma desktop.
+ .
+ This package is part of the KDE SC utilities module.
+
+Package: sweeper
+Section: utils
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: history and temporary file cleaner
+ Sweeper can quickly remove temporary information, such as web page cookies,
+ browser history, or the list of recently-opened documents.  It helps provide
+ additional privacy on a system shared between multiple users.
+ .
+ This package is part of the KDE SC utilities module.
+
+Package: printer-applet
+Section: utils
+Architecture: all
+Depends: ${python:Depends}, ${misc:Depends}, python-qt4-dbus, python-cups, python-kde4 (>= 4:4.1.82)
+Recommends: hal-cups-utils, system-config-printer-kde
+Description: manages your printing jobs
+ Printer applet lets you easily manage your printing jobs.
+ .
+ This package is part of the KDE SC utilities module.
+
+Package: filelight
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: show where your diskspace is being used
+ Filelight allows you to understand your disk usage by graphically
+ representing your filesystem as a set of concentric, segmented rings.
+ .
+ It is like a pie-chart, but the segments nest, allowing you to see both
+ which directories take up all your space, and which directories
+ and files inside those directories are the real culprits.

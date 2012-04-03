@@ -1,0 +1,352 @@
+This package was debianized by Ana Beatriz Guerrero Lopez <ana@debian.org> on
+Wed, 23 May 2007 18:51:02 +0200.
+
+It was downloaded from ftp://ftp.kde.org
+
+Upstream Author: The KDE development team <kde-core-devel@kde.org>
+Numerous people, too many to count, have contributed to kdelibs as a
+whole. The KDE project tries to make an extensive list of people who contributed
+to KDE at http://www.kde.org/people/credits/
+
+Copyright:
+Unless something else is mentioned, copyright is
+Copyright (C) 1996-2009, The K Desktop Environment project http://www.kde.org
+
+
+License:
+
+
+Unless something else is mentioned, the code files in this package are under
+the GNU General Public License: (This is later referred to as GPLv2 or later)
+
+    | This program is free software; you can redistribute it and/or modify
+    | it under the terms of the GNU General Public License as published by
+    | the Free Software Foundation; either version 2 of the license, or
+    | (at your option) any later version.
+    |
+    | This package is distributed in the hope that it will be useful,
+    | but WITHOUT ANY WARRANTY; without even the implied warranty of
+    | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    | GNU General Public License for more details.
+    |
+    | You should have received a copy of the GNU General Public License
+    | along with this program; if not, write to the Free Software Foundation,
+    | Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
+
+  The full text of the GNU General Public License version 2 is available on
+  Debian systems in /usr/share/common-licenses/GPL-2.
+
+
+The documentation docbook files in this package, placed under docs/, are under
+the GNU Free Documentation License:
+
+    | Permission is granted to copy, distribute and/or modify this
+    | document under the terms of the GNU Free Documentation License,
+    | Version 1.1 or any later version published by the Free Software
+    | Foundation; with no Invariant Sections, with no Front-Cover Texts,
+    | and with no Back-Cover Texts.
+
+  The full text of the GNU Free Documentation License is available on
+  Debian systems in /usr/share/common-licenses/GFDL-1.2
+
+As well, all the Manpages.dox included are under this license, unless specified
+otherwise below.
+
+Some more legend:
+
+The following is later referred to as GPLv2 or GPLv2only
+
+    | This program is free software; you can redistribute it and/or modify
+    | it under the terms of the GNU General Public License as published by
+    | the Free Software Foundation; version 2
+    |
+    | This package is distributed in the hope that it will be useful,
+    | but WITHOUT ANY WARRANTY; without even the implied warranty of
+    | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    | GNU General Public License for more details.
+    |
+    | You should have received a copy of the GNU General Public License
+    | along with this program; if not, write to the Free Software Foundation,
+    | Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
+
+  The full text of the GNU General Public License version 2 is available on
+  Debian systems in /usr/share/common-licenses/GPL-2.
+
+The following is later referred to as GPLv2+3+KDEev
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License as
+ * published by the Free Software Foundation; either version 2 of
+ * the License or (at your option) version 3 or any later version
+ * accepted by the membership of KDE e.V. (or its successor approved
+ * by the membership of KDE e.V.), which shall act as a proxy
+ * defined in Section 14 of version 3 of the license.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+
+  The full text of the GNU General Public License version 2 is available on
+  Debian systems in /usr/share/common-licenses/GPL-2.
+  The full text of the GNU General Public License version 3 is available on
+  Debian systems in /usr/share/common-licenses/GPL-3.
+
+The following is referred to as LGPLv2.1+3+KDEev
+
+    This library is free software; you can redistribute it and/or
+    modify it under the terms of the GNU Lesser General Public
+    License as published by the Free Software Foundation; either
+    version 2.1 of the License, or (at your option) version 3, or any
+    later version accepted by the membership of KDE e.V. (or its
+    successor approved by the membership of KDE e.V.), which shall
+    act as a proxy defined in Section 6 of version 3 of the license.
+
+    This library is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    Lesser General Public License for more details.
+
+  The full text of the GNU Lesser General Public License version 2.1 is available on
+  Debian systems in /usr/share/common-licenses/LGPL-2.1.
+  The full text of the GNU Lesser General Public License version 3 is available on
+  Debian systems in /usr/share/common-licenses/LGPL-3.
+
+
+
+Detailed copyright/license information of the files that are not under the
+directories detailed above.
+
+
+ file ~ license ~ copyright holder
+------~---------~------------------
+
+Files under ark/
+   Copyright (C) 2008 Harald Hvaal <haraldhv AT stud.ntnu.no>
+   Copyright (C) 2004-2007 Henrique Pinto <henrique.pinto@kdemail.net>
+   Copyright (C) 2003 Helio Chissini de Castro <helio@conectiva.com>
+   Copyright (C) 2002-2003 Georg Robbers <Georg.Robbers@urz.uni-hd.de>
+   Copyright (C) 2008 Chen Yew Ming <fusion82@gmail.com>
+   Copyright (C) 2005-2007 Andrew Smith <andrew-smith@mail.ru>
+   Copyright (C) 2008 Claudio Bantaloukas <rockdreamer@gmail.com>
+
+
+ Most files under GPLv2 or later
+ Some plugins under GPLv2only
+ A few is under a BSD-ish license:
+
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions
+ * are met:
+ *
+ * 1. Redistributions of source code must retain the above copyright
+ *    notice, this list of conditions and the following disclaimer.
+ * 2. Redistributions in binary form must reproduce the above copyright
+ *    notice, this list of conditions and the following disclaimer in the
+ *    documentation and/or other materials provided with the distribution.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+ * IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+ * IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+ * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES ( INCLUDING, BUT
+ * NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ * DATA, OR PROFITS; OR BUSINESS INTERRUPTION ) HOWEVER CAUSED AND ON ANY
+ * THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * ( INCLUDING NEGLIGENCE OR OTHERWISE ) ARISING IN ANY WAY OUT OF THE USE OF
+ * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+ so ark is effectively GPLv2.
+
+
+
+Files under cmake/
+Files under printer-applet/cmake
+
+ Copyright (c) 2006, Pino Toscano, <toscano.pino@tiscali.it>
+ Copyright (c) 2007 Simon Edwards <simon@simonzone.com>
+ Copyright (c) 2008 Jonathan Riddell <jriddell@ubuntu.com>
+
+	Redistribution and use in source and binary forms, with or without
+	modification, are permitted provided that the following conditions
+	are met:
+
+	1. Redistributions of source code must retain the copyright
+	   notice, this list of conditions and the following disclaimer.
+	2. Redistributions in binary form must reproduce the copyright
+	   notice, this list of conditions and the following disclaimer in the
+	   documentation and/or other materials provided with the distribution.
+	3. The name of the author may not be used to endorse or promote products
+	   derived from this software without specific prior written permission.
+
+	THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+	IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+	OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+	IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+	INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+	NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+	DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+	THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+	(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+	THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+Files under kcalc/
+ Copyright (c) 2003-2006 Klaus Niederkrueger <kniederk@math.uni-koeln.de>
+ Copyright (C) 1996-2000 Bernd Johannes Wuebben <wuebben@kde.org>
+ Copyright (C) 2006  Michel Marti <mma@objectxp.com>
+ Copyright (C) 1995 Martin Bartlett
+
+ Some parts under GNU Library General Public License version 2 or later, some parts under
+ GNU General Public License, version 2 or later.
+
+ KCalc is effectively GPLv2 or later.
+
+Files under kcharselect/
+
+ Copyright (C) 1999 Reginald Stadlbauer <reggie@kde.org>
+ Copyright (C) 2007 Daniel Laidig <d.laidig@gmx.de>
+
+ Some parts under GNU Library General Public License version 2 or later, some parts under
+ GNU General Public License, version 2 or later.
+
+
+Files under kdessh/
+
+ Copyright (C) 2000 Geert Jansen <jansen@kde.org>
+
+ Files under GNU General Public License, version2 or later.
+
+
+Files under kdf/
+
+ Copyright (c) 1998-2001 Michael Kropfberger <michael.kropfberger@gmx.net>
+ Copyright (C) 1999  Espen Sand, espen@kde.org
+
+ Files under GNU General Public License, version2 or later.
+
+Files under kfloppy/
+ Copyright (C) 2002-2003 Adriaan de Groot <groot@kde.org>
+ Copyright (C) 1997 Bernd Johannes Wuebben <wuebben@math.cornell.edu>
+ Copyright (C) 2004, 2005 Nicolas GOUTTE <goutte@kde.org>
+
+ Files is under a mix of GNU General Public License, version 2 only and GNU General
+ Public License, version 2 or later - effectively making KFloppy GPLv2.
+
+Files under kgpg/
+
+ Copyright (C) 2006-2007 Jimmy Gilles  <jimmygilles@gmail.com>
+ Copyright (C) 2002 Jean-Baptiste Mardelle <bj@altern.org>
+ Copyright (C) 2007-2008  Rolf Eike Beer <kde@opensource.sf-tec.de>
+ Copyright (C) 2007 Lukas Kropatschek <lukas.krop@gmail.com>
+
+ Files is under a mix of GPLv2 or later and GPLv2+3+KDEev - effectively rendering kgpg under
+ GPLv2+3+KDEev.
+
+
+Files under ktimer/
+
+ Copyright (C) 2001 Stefan Schimanski <1Stein@gmx.de>
+
+ Files is nuder GPLv2 or later.
+
+
+Files under kwallet/
+
+ Copyright (C) 2003-2005 George Staikos <staikos@kde.org>
+ Copyright (C) 2005 Isaac Clerencia <isaac@warp.es>
+
+ Files is a mix of GPLv2 or later and GPLv2 only - rendering everything GPLv2only
+
+Files under okteta/
+ Copyright 2003-2008 Friedrich W. H. Kossebau <kossebau@kde.org>
+
+ Files is except the main program under LGPLv2.1+3+KDEev and the main program is under
+ GPLv2+3+KDEev.
+ okteta/programlibkakao/core/tests/util/* is under LGPLv2only.
+
+Files under printer-applet/
+ Copyright (C) 2007-2008 Canonical Ltd.
+               Author: Jonathan Riddell <jriddell@ubuntu.com>
+ Copyright (C) 2007 Tim Waugh <twaugh@redhat.com>
+ Copyright (C) 2007 Red Hat, Inc.
+
+Files under superkaramba/
+ Copyright (C) 2003 Hans Karlsson <karlsson.h@home.se>
+ Copyright (C) 2003-2004 Adam Geitgey <adam@rootnode.org>
+ Copyright (c) 2005 Ryan Nickell <p0z3r@earthlink.net>
+ Copyright (c) 2004,2005 Luke Kenneth Casson Leighton <lkcl@lkcl.net>
+ Copyright (C) 2007 Sebastian Sauer <mail@dipe.org>
+ Copyright (C) 2003-2007 Matt Broadstone <mbroadst@gmail.com>
+ Copyright (c) 2004-2005 Petri Damst� <damu@iki.fi>
+ Copyright (c) 1999-2002 Hans Petter Bieker <bieker@kde.org>
+ Copyright (c) 1999 Preston Brown <pbrown@kde.org>
+ Copyright (c) 1997,2001 Stephan Kulow <coolo@kde.org>
+ Copyright (C) 1995 Software Foundation, Inc.
+ Copyright (c) 2005 Alexander Wiedenbruch <mail@wiedenbruch.de>
+ Copyright (C) 2003 by Ralph M. Churchill
+ Copyright (C) 2004 by Tommy Brander
+ Copyright (C) 2007 David Faure <faure@kde.org>
+ Copyright (C) 2001      Martijn Klingens <mklingens@yahoo.com>
+ Copyright (C) 2001      Carsten Pfeiffer <pfeiffer@kde.org>
+ Copyright (C) 2000-2001 Matthias Elter   <elter@kde.org>
+ Copyright (C) 2000-2001 Matthias Ettrich <ettrich@kde.org>
+ Copyright (C) 2003      Sven Leiber <s.leiber@web.de>
+ Copyright (c) 2001 Richard Moore <rich@kde.org>
+ Copyright (c) 2002 Lukas Tinkl <lukas@kde.org>
+
+ Most files under GPLv2 or later
+ Some files under GPLv2only
+ Some example code is not clear licensed, but as example code it must be covered by the
+ generic COPYING file, GPLv2.
+
+ A few files is under a BSD-ish license:
+	Permission is hereby granted, free of charge, to any person obtaining a copy
+	of this software and associated documentation files (the "Software"), to deal
+	in the Software without restriction, including without limitation the rights
+	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+	copies of the Software, and to permit persons to whom the Software is
+	furnished to do so, subject to the following conditions:
+
+	The above copyright notice and this permission notice shall be included in
+	all copies or substantial portions of the Software.
+
+	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
+	AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN
+	AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+	CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+
+Files under sweeper/
+
+ Copyright (C) 2005 Benjamin C Meyer (ben at meyerhome dot net)
+ Copyright (C) 2005 Brian S. Stephan ( bssteph at irtonline dot org )
+ Copyright (c) 2003-2005 Ralf Hoelzer <ralf@well.com>
+
+ Files under LGPLv2 or later.
+
+Files under kdelirc/
+
+ Copyright (C) 2002-2003 Gav Wood <gav@kde.org>
+
+ Files under LGPLv2 or later.
+
+-------------------------------------------------------------------------------
+Legend:
+
+
+On Debian systems, you can find the complete texts of these licenses at:
+  - Artistic: /usr/share/common-licenses/Artistic
+  - GPL:      /usr/share/common-licenses/GPL
+  - GPLv2:    /usr/share/common-licenses/GPL-2
+  - LGPLv2:   /usr/share/common-licenses/LGPL-2
+  - GFDL:     /usr/share/common-licenses/GFDL
+
+-------------------------------------------------------------------------------
+
+The Debian packaging is (C) 2007-2009, Debian Qt/KDE Maintainers
+<debian-qt-kde@lists.debian.org> and is licensed under the GPL,
+see `/usr/share/common-licenses/GPL'.

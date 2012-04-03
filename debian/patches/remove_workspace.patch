@@ -1,0 +1,71 @@
+Author: Pino Toscano <pino@debian.org>
+Description: remove extra kdebase-workspace dependency
+Last-Update: 2011-10-11
+Applied-Upstream: 4.8, commit:a9bc543c627d3abf582975695dbae78ed44c8dd8 (kremotecontrol repository)
+--- a/kremotecontrol/CMakeLists.txt
++++ b/kremotecontrol/CMakeLists.txt
+@@ -21,11 +21,9 @@ else()
+     set(STUFF_REQUIRED FALSE)
+ endif()
+ 
+-find_package( KDE4Workspace )
+-macro_log_feature( KDE4Workspace_FOUND "KDE4Workspace" "KDE Workspace library, part of kdebase-workspace" "http://www.kde.org" ${STUFF_REQUIRED} "" "Required to build kremotecontrol." )
+ macro_log_feature( QT_QTXMLPATTERNS_FOUND "QtXmlPatterns" "Qt support for XPath, XQuery, XSLT and XML Schema validation" "http://doc.trolltech.com/latest/qtxmlpatterns.html" ${STUFF_REQUIRED} "" "Required to build kremotecontrol." )
+ 
+-if(NOT KDE4Workspace_FOUND OR NOT QT_QTXMLPATTERNS_FOUND)
++if(NOT QT_QTXMLPATTERNS_FOUND)
+     if(${CMAKE_SOURCE_DIR} STREQUAL ${CMAKE_CURRENT_SOURCE_DIR})
+         macro_display_feature_log()
+     else()
+--- a/kremotecontrol/libkremotecontrol/CMakeLists.txt
++++ b/kremotecontrol/libkremotecontrol/CMakeLists.txt
+@@ -4,7 +4,6 @@ include_directories(
+    ${KDE4_INCLUDES}
+    ${QT_INCLUDES}
+    ${X11_INCLUDE_DIR}
+-#   ${KDE4WORKSPACE_INCLUDE_DIR}
+ )
+ 
+ 
+--- a/kremotecontrol/krcdnotifieritem/CMakeLists.txt
++++ b/kremotecontrol/krcdnotifieritem/CMakeLists.txt
+@@ -6,7 +6,7 @@ include_directories(
+     ${CMAKE_CURRENT_BINARY_DIR}
+     ${KDE4_INCLUDES}
+     ${QT_INCLUDES}
+-    ${KDE4WORKSPACE_INCLUDE_DIR} )
++)
+ 
+ set(krcdnotifieritem_SRCS
+     main.cpp
+--- a/kremotecontrol/dataengine/CMakeLists.txt
++++ b/kremotecontrol/dataengine/CMakeLists.txt
+@@ -8,7 +8,6 @@ include_directories(
+   ${CMAKE_BINARY_DIR} 
+   ${KDE4_INCLUDES} 
+   ${PLASMA_INCLUDE_DIR}
+-  ${KDE4WORKSPACE_INCLUDE_DIR}
+   ${CMAKE_CURRENT_SOURCE_DIR}/../libkremotecontrol
+ )
+ 
+--- a/kremotecontrol/kcmremotecontrol/CMakeLists.txt
++++ b/kremotecontrol/kcmremotecontrol/CMakeLists.txt
+@@ -7,7 +7,7 @@ include_directories(
+    ${CMAKE_CURRENT_BINARY_DIR}/../libkremotecontrol
+    ${KDE4_INCLUDES}
+    ${QT_INCLUDES}
+-   ${KDE4WORKSPACE_INCLUDE_DIR} )
++)
+ 
+ ########### next target ###############
+ 
+--- a/kremotecontrol/kded/CMakeLists.txt
++++ b/kremotecontrol/kded/CMakeLists.txt
+@@ -1,7 +1,6 @@
+ 
+ include_directories(
+    ${CMAKE_CURRENT_SOURCE_DIR}/../libkremotecontrol
+-   ${KDE4WORKSPACE_INCLUDE_DIR}
+    )
+ 
+ set(kded_kremotecontroldaemon_SRCS
