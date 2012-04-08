@@ -1,5 +1,7 @@
 kgpg (4:4.8.1-0r0) UNRELEASED; urgency=low
 
+  TODO: Update copyright file.
+
   * Initial release.
   * Bump Standards-Version to 3.9.3, no further changes.
 
