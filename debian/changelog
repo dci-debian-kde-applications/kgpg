@@ -1,3 +1,15 @@
+kgpg (4:4.8.3-0ubuntu0.1) UNRELEASED; urgency=low
+
+  * New upstream release
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Thu, 03 May 2012 20:42:30 +0200
+
+kgpg (4:4.8.2-0ubuntu2) precise-proposed; urgency=low
+
+  * Rebuild for .pot generation
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 12 Apr 2012 16:32:05 +0100
+
 kgpg (4:4.8.2-0ubuntu1) precise; urgency=low
 
   * new upstream release
