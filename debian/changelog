@@ -2,5 +2,6 @@ kgpg (4:4.8.4-0r0) UNRELEASED; urgency=low
 
   * Initial release.
   * Bump Standards-Version to 3.9.3, no further changes.
+  * Add watch file.
 
  -- Eshat Cakar <info@eshat.de>  Sun, 04 Mar 2012 21:48:27 +0100
