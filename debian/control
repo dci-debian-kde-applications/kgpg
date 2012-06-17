@@ -26,7 +26,7 @@ Description: graphical front end for GNU Privacy Guard
  cryptography to short pieces of text, and can also quickly apply cryptography
  to the contents of the clipboard.
  .
- This package is part of the KDE SC utilities module.
+ This package is part of the KDE Utilities module.
 
 
 Package: kgpg-dbg
@@ -38,4 +38,4 @@ Description: debugging symbols for kgpg
  This package contains debugging files used to investigate problems with
  binaries included in kgpg.
  .
- This package is part of the KDE SC utilities module.
+ This package is part of the KDE Utilities module.
