@@ -1,4 +1,4 @@
-kgpg (4:4.8.4-0r0) UNRELEASED; urgency=low
+kgpg (4:4.8.4-1) unstable; urgency=low
 
   * Initial release.
   * Bump Standards-Version to 3.9.3, no further changes.
