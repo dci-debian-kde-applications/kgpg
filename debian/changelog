@@ -1,9 +1,11 @@
-kgpg (4:4.8.4-1r0) UNRELEASED; urgency=low
+kgpg (4:4.8.4-2) unstable; urgency=low
+
+  * Team upload
 
   [ Eshat Cakar ]
   * Add Breaks/Replaces with previous kdeutils-dbg packages. (Closes: #678492)
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 22 Jun 2012 10:08:16 +0200
+ -- Sune Vuorela <sune@debian.org>  Fri, 22 Jun 2012 22:01:54 +0200
 
 kgpg (4:4.8.4-1) unstable; urgency=low
 
