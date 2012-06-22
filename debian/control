@@ -34,6 +34,8 @@ Section: debug
 Architecture: any
 Priority: extra
 Depends: ${misc:Depends}, kgpg (= ${binary:Version})
+Replaces: kdeutils-dbg (<< 4:4.8)
+Breaks: kdeutils-dbg (<< 4:4.8)
 Description: debugging symbols for kgpg
  This package contains debugging files used to investigate problems with
  binaries included in kgpg.
