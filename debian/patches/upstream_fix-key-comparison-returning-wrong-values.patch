@@ -1,7 +1,7 @@
 From 2d252cf08c51866a6acebe705db11b29941691bf Mon Sep 17 00:00:00 2001
 From: Rolf Eike Beer <kde@opensource.sf-tec.de>
 Date: Mon, 11 Jun 2012 19:29:12 +0200
-Subject: [PATCH 2/3] fix key comparison returning wrong values
+Subject: [PATCH] fix key comparison returning wrong values
 
 This fixes a regression introduced in 4.8.2 with commit
 2a100ae8d203107d17e438f67f65d26a4949cccc when trying to fix bug 292405.
