@@ -1,5 +1,9 @@
 kgpg (4:4.8.4-3) UNRELEASED; urgency=low
 
+  [ Pino Toscano ]
+  * Backport upstream commit a3b0cb755ff08721a3b9e2c25d4aaf655fb40804 to fix
+    a crash when setting a new default key; patch
+    upstream_fix-NULL-deref-when-new-setting-default-key.patch.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 30 Jun 2012 14:01:10 +0200
 
