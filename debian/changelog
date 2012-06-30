@@ -1,6 +1,6 @@
-kgpg (4:4.8.4-3) UNRELEASED; urgency=low
+kgpg (4:4.8.4-3) unstable; urgency=low
 
-  [ Pino Toscano ]
+  * Team upload.
   * Backport upstream commit a3b0cb755ff08721a3b9e2c25d4aaf655fb40804 to fix
     a crash when setting a new default key; patch
     upstream_fix-NULL-deref-when-new-setting-default-key.patch.
@@ -8,7 +8,7 @@ kgpg (4:4.8.4-3) UNRELEASED; urgency=low
     the comparison of keys; patch
     upstream_fix-key-comparison-returning-wrong-values.patch. (Closes: #679635)
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 30 Jun 2012 14:01:10 +0200
+ -- Pino Toscano <pino@debian.org>  Sat, 30 Jun 2012 14:26:02 +0200
 
 kgpg (4:4.8.4-2) unstable; urgency=low
 
