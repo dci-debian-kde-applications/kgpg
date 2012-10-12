@@ -1,3 +1,10 @@
+kgpg (4:4.9.2-0ubuntu2) quantal; urgency=low
+
+  * Rebuild to get missing binaries that were lost due to being copied from
+    proposed to release before they were built
+
+ -- Scott Kitterman <scott@kitterman.com>  Fri, 12 Oct 2012 09:30:02 -0400
+
 kgpg (4:4.9.2-0ubuntu1) quantal-proposed; urgency=low
 
   * New upstream bugfix release
