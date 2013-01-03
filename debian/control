@@ -5,7 +5,7 @@ Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
 XSBC-Original-Maintainer: Jonathan Riddell <jriddell@ubuntu.com>
 Build-Depends: 
  cmake, debhelper (>= 7.3.16), pkg-kde-tools (>= 0.12),
- kdelibs5-dev (>= 4:4.9.95), kdepimlibs5-dev (>= 4:4.9.95)
+ kdelibs5-dev (>= 4:4.9.97), kdepimlibs5-dev (>= 4:4.9.97)
 Standards-Version: 3.9.2
 Homepage: http://www.kde.org/
 Vcs-Browser: http://bazaar.launchpad.net/~kubuntu-packagers/kubuntu-packaging/kgpg
