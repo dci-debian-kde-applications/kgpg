@@ -1,2 +1,0 @@
-upstream_fix-NULL-deref-when-new-setting-default-key.patch
-upstream_fix-key-comparison-returning-wrong-values.patch

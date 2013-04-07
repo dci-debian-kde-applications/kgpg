@@ -3,6 +3,7 @@ kgpg (4:4.10.2-1) UNRELEASED; urgency=low
   * New upstream release.
   * Bump build-deps.
   * Update uploaders.
+  * Remove patches taken from upstream.
 
  -- Sune Vuorela <sune@debian.org>  Sun, 07 Apr 2013 23:51:41 +0000
 
