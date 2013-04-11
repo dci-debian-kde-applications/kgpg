@@ -1,3 +1,9 @@
+kgpg (4:4.10.2-2) UNRELEASED; urgency=low
+
+  * Reorder build-deps hoping to cheat the aptitude resolver.
+
+ -- Sune Vuorela <sune@debian.org>  Tue, 09 Apr 2013 20:42:40 +0000
+
 kgpg (4:4.10.2-1) experimental; urgency=low
 
   * New upstream release.
