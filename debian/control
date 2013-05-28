@@ -2,23 +2,44 @@ Source: kgpg
 Section: kde
 Priority: optional
 Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
-XSBC-Original-Maintainer: Jonathan Riddell <jriddell@ubuntu.com>
-Build-Depends: 
+XSBC-Original-Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Fathi Boudra <fabo@debian.org>,
+ Sune Vuorela <sune@debian.org>,
+ Modestas Vainius <modax@debian.org>,
+ George Kiagiadakis <kiagiadakis.george@gmail.com>,
+ Eshat Cakar <info@eshat.de>
+Build-Depends: kde-sc-dev-latest (>= 4:4.10.2),
  cmake, debhelper (>= 7.3.16), pkg-kde-tools (>= 0.12),
- kdelibs5-dev (>= 4:4.10.2), kdepimlibs5-dev (>= 4:4.10.2)
-Standards-Version: 3.9.2
+ kdepimlibs5-dev (>= 4:4.10.2), nepomuk-core-dev (>= 4:4.10.2)
+Standards-Version: 3.9.3
 Homepage: http://www.kde.org/
 Vcs-Browser: http://bazaar.launchpad.net/~kubuntu-packagers/kubuntu-packaging/kgpg
 Vcs-Bzr: https://code.launchpad.net/~kubuntu-packagers/kubuntu-packaging/kgpg
+X-Debian-Vcs-Browser: http://git.debian.org/?p=pkg-kde/kde-sc/kgpg.git
+X-Debian-Vcs-Git: git://git.debian.org/pkg-kde/kde-sc/kgpg.git
 
 Package: kgpg
 Section: utils
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: gnupg | gnupg2, ${shlibs:Depends}, ${misc:Depends}
 Description: graphical front end for GNU Privacy Guard
  Kgpg manages cryptographic keys for the GNU Privacy Guard, and can encrypt,
  decrypt, sign, and verify files.  It features a simple editor for applying
  cryptography to short pieces of text, and can also quickly apply cryptography
  to the contents of the clipboard.
  .
- This package is part of the KDE SC utilities module.
+ This package is part of the KDE Utilities module.
+
+
+Package: kgpg-dbg
+Section: debug
+Architecture: any
+Priority: extra
+Depends: ${misc:Depends}, kgpg (= ${binary:Version})
+Replaces: kdeutils-dbg (<< 4:4.8)
+Breaks: kdeutils-dbg (<< 4:4.8)
+Description: debugging symbols for kgpg
+ This package contains debugging files used to investigate problems with
+ binaries included in kgpg.
+ .
+ This package is part of the KDE Utilities module.

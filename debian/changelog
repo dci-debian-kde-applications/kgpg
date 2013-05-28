@@ -1,3 +1,24 @@
+kgpg (4:4.10.3-0ubuntu1) saucy; urgency=low
+
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 23 May 2013 11:04:40 +0000
+
+kgpg (4:4.10.2-2) experimental; urgency=low
+
+  * Reorder build-deps hoping to cheat the aptitude resolver.
+
+ -- Sune Vuorela <sune@debian.org>  Thu, 11 Apr 2013 08:38:27 +0000
+
+kgpg (4:4.10.2-1) experimental; urgency=low
+
+  * New upstream release.
+  * Bump build-deps.
+  * Update uploaders.
+  * Remove patches taken from upstream.
+
+ -- Sune Vuorela <sune@debian.org>  Sun, 07 Apr 2013 23:52:43 +0000
+
 kgpg (4:4.10.2-0ubuntu1) raring; urgency=low
 
   * New upstream bugfix release
@@ -92,6 +113,44 @@ kgpg (4:4.8.80-0ubuntu1) quantal; urgency=low
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 06 Jun 2012 16:37:53 +0100
 
+kgpg (4:4.8.4-4) unstable; urgency=low
+
+  * Team upload.
+
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Depend on gnupg or gnupg2 (Closes: #686632).
+
+ -- Pino Toscano <pino@debian.org>  Thu, 29 Nov 2012 20:34:53 +0100
+
+kgpg (4:4.8.4-3) unstable; urgency=low
+
+  * Team upload.
+  * Backport upstream commit a3b0cb755ff08721a3b9e2c25d4aaf655fb40804 to fix
+    a crash when setting a new default key; patch
+    upstream_fix-NULL-deref-when-new-setting-default-key.patch.
+  * Backport upstream commit 2d252cf08c51866a6acebe705db11b29941691bf to fix
+    the comparison of keys; patch
+    upstream_fix-key-comparison-returning-wrong-values.patch. (Closes: #679635)
+
+ -- Pino Toscano <pino@debian.org>  Sat, 30 Jun 2012 14:26:02 +0200
+
+kgpg (4:4.8.4-2) unstable; urgency=low
+
+  * Team upload
+
+  [ Eshat Cakar ]
+  * Add Breaks/Replaces with previous kdeutils-dbg packages. (Closes: #678492)
+
+ -- Sune Vuorela <sune@debian.org>  Fri, 22 Jun 2012 22:01:54 +0200
+
+kgpg (4:4.8.4-1) unstable; urgency=low
+
+  * Initial release.
+  * Bump Standards-Version to 3.9.3, no further changes.
+  * Add watch file.
+
+ -- Eshat Cakar <info@eshat.de>  Sun, 04 Mar 2012 21:48:27 +0100
+
 kgpg (4:4.8.3-0ubuntu1) quantal; urgency=low
 
   * New upstream release
@@ -139,3 +198,4 @@ kgpg (4:4.7.90-0ubuntu1) precise; urgency=low
   * Initial package
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 16 Dec 2011 14:56:55 +0000
+

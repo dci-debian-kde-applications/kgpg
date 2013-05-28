@@ -1,60 +1,53 @@
-This package was made by Jonathan Riddell <jriddell@ubuntu.com> on
-Fri, 16 Dec 2011 14:56:55 +0000.
+Upstream-Name: kgpg
+Source: ftp://ftp.kde.org
 
-It was downloaded from ftp://ftp.kde.org
+Files: *
+Copyright: 2006-2012, Rolf Eike Beer <kde@opensource.sf-tec.de>
+	   2002, Jean-Baptiste Mardelle <bj@altern.org>
+	   2006-2007, Jimmy Gilles <jimmygilles@gmail.com>
+	   2011, Luis Ángel Fernández Fernández <laffdez@gmail.com>
+	   2011, Philip Greggory Lee <rocketman768@gmail.com>
+	   2003, Waldo Bastian <bastian@kde.org>
+	   2007, Lukas Kropatschek <lukas.krop@gmail.com>
+License: Mix of GPL v2+ and GPLv2 or GPLv3 or later editions as approved by KDE eV
 
-Upstream Author:
- Jean-Baptiste Mardelle
- Jimmy Gilles
- Rolf Eike Beer
+Files: debian/*
+Copyright: 2012, Eshat Cakar <info@eshat.de>
+License: GPL-2+
 
-Copyright:
- 2003 Jean-Baptiste Mardelle
- 2006-2007 Jimmy Gilles  <jimmygilles@gmail.com>
- 2002 Jean-Baptiste Mardelle <bj@altern.org>
- 2007-2008  Rolf Eike Beer <kde@opensource.sf-tec.de>
- 2007 Lukas Kropatschek <lukas.krop@gmail.com>
+License: GPL-2+
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version. 
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License along
+ with this program; if not, write to the Free Software Foundation, Inc.,
+ 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ .
+ On Debian systems, the full text of the GNU General Public
+ License version 2 can be found in the file
+ `/usr/share/common-licenses/GPL-2'.
 
-License:
-
-GPLv2+3+KDEev
-
-  This program is free software; you can redistribute it and/or
-  modify it under the terms of the GNU General Public License as
-  published by the Free Software Foundation; either version 2 of
-  the License or (at your option) version 3 or any later version
-  accepted by the membership of KDE e.V. (or its successor approved
-  by the membership of KDE e.V.), which shall act as a proxy
-  defined in Section 14 of version 3 of the license.
+License: GPLv2 or GPLv3 or later editions as approved by KDE eV
+ This program is free software; you can redistribute it and/or
+ modify it under the terms of the GNU General Public License as
+ published by the Free Software Foundation; either version 2 of
+ the License or (at your option) version 3 or any later version
+ accepted by the membership of KDE e.V. (or its successor approved
+ by the membership of KDE e.V.), which shall act as a proxy
+ defined in Section 14 of version 3 of the license.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  
-  This program is distributed in the hope that it will be useful,
-  but WITHOUT ANY WARRANTY; without even the implied warranty of
-  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  GNU General Public License for more details.
- 
-  You should have received a copy of the GNU General Public License
-  along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
-Several files are GNU GPL 2 or later.
-
-The full text of the GNU General Public License version 2 is available on
-Debian systems in /usr/share/common-licenses/GPL-2.
-
-
-The documentation docbook files in this package, placed under docs/, are under
-the GNU Free Documentation License:
-
-    | Permission is granted to copy, distribute and/or modify this
-    | document under the terms of the GNU Free Documentation License,
-    | Version 1.1 or any later version published by the Free Software
-    | Foundation; with no Invariant Sections, with no Front-Cover Texts,
-    | and with no Back-Cover Texts.
-
-  The full text of the GNU Free Documentation License is available on
-  Debian systems in /usr/share/common-licenses/GFDL-1.2
-
-
-The Debian packaging is (C) 2007-2009, Debian Qt/KDE Maintainers
-<debian-qt-kde@lists.debian.org> and copyright 2011 Canonical Ltd and
-is licensed under the GNU GPL version 2 or later, see
-`/usr/share/common-licenses/GPL'.
