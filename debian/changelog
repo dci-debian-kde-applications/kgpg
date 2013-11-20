@@ -1,6 +1,7 @@
 kgpg (4:4.11.80-0ubuntu1) UNRELEASED; urgency=low
 
   * New upstream beta release
+  * Add libboost1.54-dev as a dependency
 
  -- Rohan Garg <rohangarg@kubuntu.org>  Fri, 08 Nov 2013 17:10:40 +0100
 
