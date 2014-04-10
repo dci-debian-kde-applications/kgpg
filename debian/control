@@ -10,7 +10,7 @@ Uploaders: Fathi Boudra <fabo@debian.org>,
  Eshat Cakar <info@eshat.de>
 Build-Depends: kde-sc-dev-latest (>= 4:4.10.2),
  cmake, debhelper (>= 7.3.16), pkg-kde-tools (>= 0.12),
- kdepimlibs5-dev (>= 4:4.12.97), nepomuk-core-dev (>= 4:4.12.97),
+ kdepimlibs5-dev (>= 4:4.13.0), nepomuk-core-dev (>= 4:4.13.0),
  libboost1.54-dev
 Standards-Version: 3.9.3
 Homepage: http://www.kde.org/
