@@ -8,9 +8,13 @@ Uploaders: Fathi Boudra <fabo@debian.org>,
            George Kiagiadakis <kiagiadakis.george@gmail.com>,
            Eshat Cakar <info@eshat.de>,
            Maximiliano Curia <maxy@debian.org>
-Build-Depends: kde-sc-dev-latest (>= 4:4.11),
- cmake, debhelper (>= 9), pkg-kde-tools (>= 0.12),
- kdepimlibs5-dev (>= 4:4.11), nepomuk-core-dev (>= 4:4.11)
+Build-Depends: cmake,
+               debhelper (>= 9),
+               kde-sc-dev-latest (>= 4:4.12),
+               kdepimlibs5-dev (>= 4:4.11),
+               libboost-dev,
+               nepomuk-core-dev (>= 4:4.11),
+               pkg-kde-tools (>= 0.12)
 Standards-Version: 3.9.5
 Homepage: http://www.kde.org/
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/kde-sc/kgpg.git
@@ -19,7 +23,7 @@ Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-sc/kgpg.git
 Package: kgpg
 Section: utils
 Architecture: any
-Depends: gnupg | gnupg2, ${shlibs:Depends}, ${misc:Depends}
+Depends: gnupg | gnupg2, ${misc:Depends}, ${shlibs:Depends}
 Description: graphical front end for GNU Privacy Guard
  Kgpg manages cryptographic keys for the GNU Privacy Guard, and can encrypt,
  decrypt, sign, and verify files.  It features a simple editor for applying
@@ -32,7 +36,7 @@ Package: kgpg-dbg
 Section: debug
 Architecture: any
 Priority: extra
-Depends: ${misc:Depends}, kgpg (= ${binary:Version})
+Depends: kgpg (= ${binary:Version}), ${misc:Depends}
 Replaces: kdeutils-dbg (<< 4:4.8)
 Breaks: kdeutils-dbg (<< 4:4.8)
 Description: debugging symbols for kgpg
