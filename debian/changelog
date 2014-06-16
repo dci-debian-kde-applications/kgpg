@@ -1,3 +1,15 @@
+kgpg (4:4.13.1-1ubuntu1) UNRELEASED; urgency=medium
+
+  * Merge with Debian, no remaining changes
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Mon, 16 Jun 2014 16:44:43 +0200
+
+kgpg (4:4.13.1-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 26 May 2014 14:09:56 +0200
+
 kgpg (4:4.13.0-0ubuntu2) UNRELEASED; urgency=medium
 
   * Build against boost1.55.
@@ -28,11 +40,31 @@ kgpg (4:4.12.90-0ubuntu1) trusty; urgency=medium
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 19 Mar 2014 10:57:54 +0000
 
+kgpg (4:4.12.4-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 28 Apr 2014 12:23:46 +0200
+
+kgpg (4:4.12.3-1) experimental; urgency=medium
+
+  * New upstream release.
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 04 Mar 2014 00:05:26 +0100
+
 kgpg (4:4.12.3-0ubuntu1) trusty; urgency=medium
 
   * New upstream bugfix release
 
  -- Rohan Garg <rohangarg@kubuntu.org>  Tue, 04 Mar 2014 20:49:01 +0100
+
+kgpg (4:4.12.2-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Update build dependencies.
+  * Bump kde-sc-dev-latest build dependency.
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 10 Feb 2014 11:31:29 +0100
 
 kgpg (4:4.12.2-0ubuntu1) trusty; urgency=medium
 
@@ -70,6 +102,26 @@ kgpg (4:4.11.80-0ubuntu1) trusty; urgency=low
   * Add libboost1.54-dev as a dependency
 
  -- Rohan Garg <rohangarg@kubuntu.org>  Sat, 23 Nov 2013 17:41:06 +0100
+
+kgpg (4:4.11.5-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump Standards-Version to 3.9.5, no changes needed.
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 03 Feb 2014 12:34:32 +0100
+
+kgpg (4:4.11.3-1) unstable; urgency=low
+
+  * New upstream release.
+  * Update build dependencies.
+
+ -- Maximiliano Curia <maxy@debian.org>  Sun, 10 Nov 2013 00:27:28 +0100
+
+kgpg (4:4.11.2-1) experimental; urgency=low
+
+  * New upstream release.
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 09 Oct 2013 11:59:20 +0200
 
 kgpg (4:4.11.2-0ubuntu1) saucy; urgency=low
 
@@ -116,6 +168,22 @@ kgpg (4:4.10.80-0ubuntu1) saucy; urgency=low
   * New upstream release
 
  -- Rohan Garg <rohangarg@kubuntu.org>  Fri, 21 Jun 2013 01:18:14 +0100
+
+kgpg (4:4.10.5-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 12 Jul 2013 09:22:15 +0200
+
+kgpg (4:4.10.4-1) experimental; urgency=low
+
+  * New upstream release.
+  * Bump debhelper build-dep and compat to 9.
+  * Bump Standards-Version to 3.9.4.
+  * Add myself to uploaders.
+  * Update vcs fields.
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 14 Jun 2013 19:46:12 +0200
 
 kgpg (4:4.10.4-0ubuntu1) saucy-proposed; urgency=low
 

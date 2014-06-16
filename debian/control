@@ -4,25 +4,29 @@ Priority: optional
 Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
 XSBC-Original-Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Fathi Boudra <fabo@debian.org>,
- Sune Vuorela <sune@debian.org>,
- Modestas Vainius <modax@debian.org>,
- George Kiagiadakis <kiagiadakis.george@gmail.com>,
- Eshat Cakar <info@eshat.de>
-Build-Depends: kde-sc-dev-latest (>= 4:4.10.2),
- cmake, debhelper (>= 7.3.16), pkg-kde-tools (>= 0.12),
- kdepimlibs5-dev (>= 4:4.13.0), nepomuk-core-dev (>= 4:4.13.0),
- libboost1.55-dev
-Standards-Version: 3.9.3
+           Sune Vuorela <sune@debian.org>,
+           Modestas Vainius <modax@debian.org>,
+           George Kiagiadakis <kiagiadakis.george@gmail.com>,
+           Eshat Cakar <info@eshat.de>,
+           Maximiliano Curia <maxy@debian.org>
+Build-Depends: cmake,
+               debhelper (>= 9),
+               kde-sc-dev-latest (>= 4:4.12),
+               kdepimlibs5-dev (>= 4:4.11),
+               libboost-dev,
+               nepomuk-core-dev (>= 4:4.11),
+               pkg-kde-tools (>= 0.12)
+Standards-Version: 3.9.5
 Homepage: http://www.kde.org/
 Vcs-Browser: http://bazaar.launchpad.net/~kubuntu-packagers/kubuntu-packaging/kgpg
 Vcs-Bzr: https://code.launchpad.net/~kubuntu-packagers/kubuntu-packaging/kgpg
-X-Debian-Vcs-Browser: http://git.debian.org/?p=pkg-kde/kde-sc/kgpg.git
-X-Debian-Vcs-Git: git://git.debian.org/pkg-kde/kde-sc/kgpg.git
+X-Vcs-Debian-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/kde-sc/kgpg.git
+X-Vcs-Debian-Git: git://anonscm.debian.org/pkg-kde/kde-sc/kgpg.git
 
 Package: kgpg
 Section: utils
 Architecture: any
-Depends: gnupg | gnupg2, ${shlibs:Depends}, ${misc:Depends}
+Depends: gnupg | gnupg2, ${misc:Depends}, ${shlibs:Depends}
 Description: graphical front end for GNU Privacy Guard
  Kgpg manages cryptographic keys for the GNU Privacy Guard, and can encrypt,
  decrypt, sign, and verify files.  It features a simple editor for applying
@@ -31,12 +35,11 @@ Description: graphical front end for GNU Privacy Guard
  .
  This package is part of the KDE Utilities module.
 
-
 Package: kgpg-dbg
 Section: debug
 Architecture: any
 Priority: extra
-Depends: ${misc:Depends}, kgpg (= ${binary:Version})
+Depends: kgpg (= ${binary:Version}), ${misc:Depends}
 Replaces: kdeutils-dbg (<< 4:4.8)
 Breaks: kdeutils-dbg (<< 4:4.8)
 Description: debugging symbols for kgpg
