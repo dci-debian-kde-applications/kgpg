@@ -1,9 +1,9 @@
-kgpg (4:4.14.0-1) UNRELEASED; urgency=medium
+kgpg (4:4.14.0-1) unstable; urgency=medium
 
   * New upstream release.
   * Update build dependencies.
 
- -- Maximiliano Curia <maxy@debian.org>  Fri, 22 Aug 2014 06:11:03 +0200
+ -- Maximiliano Curia <maxy@debian.org>  Sun, 24 Aug 2014 04:39:06 +0200
 
 kgpg (4:4.13.2-1) unstable; urgency=medium
 
