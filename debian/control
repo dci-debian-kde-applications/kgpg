@@ -14,6 +14,7 @@ Build-Depends: cmake,
                kde-sc-dev-latest (>= 4:4.12),
                kdepimlibs5-dev (>= 4:4.13.3-2),
                libboost-dev,
+               libgpgme11-dev,
                nepomuk-core-dev (>= 4:4.11),
                pkg-kde-tools (>= 0.12)
 Standards-Version: 3.9.5
