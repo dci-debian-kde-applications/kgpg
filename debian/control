@@ -1,8 +1,7 @@
 Source: kgpg
 Section: kde
 Priority: optional
-Maintainer: Debian/Ubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
-X-Ubuntu-Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Fathi Boudra <fabo@debian.org>,
            Sune Vuorela <sune@debian.org>,
            Modestas Vainius <modax@debian.org>,
@@ -12,7 +11,7 @@ Uploaders: Fathi Boudra <fabo@debian.org>,
 Build-Depends: cmake,
                debhelper (>= 9),
                kde-sc-dev-latest (>= 4:4.12),
-               kdepimlibs5-dev (>= 4:4.13.3-2),
+               kdepimlibs5-dev (>= 4:4.11),
                libboost-dev,
                libgpgme11-dev,
                nepomuk-core-dev (>= 4:4.11),
@@ -21,8 +20,6 @@ Standards-Version: 3.9.5
 Homepage: http://www.kde.org/
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/kde-sc/kgpg.git
 Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-sc/kgpg.git
-X-Ubuntu-Vcs-Browser: http://bazaar.launchpad.net/~kubuntu-packagers/kubuntu-packaging/kgpg
-X-Ubuntu-Vcs-Bzr: https://code.launchpad.net/~kubuntu-packagers/kubuntu-packaging/kgpg
 
 Package: kgpg
 Section: utils
