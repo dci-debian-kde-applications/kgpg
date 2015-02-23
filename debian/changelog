@@ -1,3 +1,9 @@
+kgpg (4:14.12.2-1~) UNRELEASED; urgency=medium
+
+  * New upstream release (14.12.2).
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 23 Feb 2015 11:47:45 +0100
+
 kgpg (4:14.12.2-0ubuntu1) vivid; urgency=medium
 
   * New upstream release
@@ -20,11 +26,11 @@ kgpg (4:14.11.97-0ubuntu1) vivid; urgency=medium
 
 kgpg (4:14.11.95-0ubuntu1) vivid; urgency=medium
 
-  * Initial release for KDE applications 14.12 series 
+  * Initial release for KDE applications 14.12 series
    - Change maintainer to Debian/Kubuntu
-   - Fix Watch file applications locations 
+   - Fix Watch file applications locations
    - Fix VCS for new kde-applications location
-  * Debian merge, remaining changes: 
+  * Debian merge, remaining changes:
    - Remove EOL nepomuk-core-dev build depend.
 
  -- Scarlett Clark <sgclark@kubuntu.org>  Tue, 25 Nov 2014 18:42:07 +0000
@@ -479,7 +485,7 @@ kgpg (4:4.8.2-0ubuntu1) precise; urgency=low
 
 kgpg (4:4.8.1-0ubuntu1) precise; urgency=low
 
-  * New upstream release 
+  * New upstream release
 
  -- Philip Muškovac <yofel@kubuntu.org>  Sun, 04 Mar 2012 21:48:27 +0100
 
@@ -506,4 +512,3 @@ kgpg (4:4.7.90-0ubuntu1) precise; urgency=low
   * Initial package
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 16 Dec 2011 14:56:55 +0000
-
