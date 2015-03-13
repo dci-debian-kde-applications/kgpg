@@ -1,8 +1,8 @@
-kgpg (4:14.12.3-0ubuntu1) UNRELEASED; urgency=medium
+kgpg (4:14.12.3-0ubuntu1) vivid; urgency=medium
 
   * New upstream release
 
- -- Scarlett Clark <sgclark@kubuntu.org>  Mon, 09 Mar 2015 10:36:51 -0700
+ -- Scarlett Clark <sgclark@kubuntu.org>  Fri, 13 Mar 2015 13:44:31 -0700
 
 kgpg (4:14.12.2-0ubuntu1) vivid; urgency=medium
 
