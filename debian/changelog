@@ -1,10 +1,15 @@
-kgpg (4:15.04.3-1~) UNRELEASED; urgency=medium
+kgpg (4:15.04.3-1) experimental; urgency=medium
 
+  * Team upload.
+
+  [ Maximiliano Curia ]
   * New upstream release (15.04.0).
   * New upstream release (15.04.2).
+
+  [ Jeremy Lainé ]
   * New upstream release (15.04.3).
 
- -- Maximiliano Curia <maxy@debian.org>  Fri, 05 Jun 2015 11:01:48 +0200
+ -- Jeremy Lainé <jeremy.laine@m4x.org>  Tue, 28 Jul 2015 14:17:07 +0200
 
 kgpg (4:14.12.3-1) experimental; urgency=medium
 
