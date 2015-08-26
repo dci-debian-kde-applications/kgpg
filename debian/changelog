@@ -1,4 +1,4 @@
-kgpg (4:15.08.0-0ubuntu1) UNRELEASED; urgency=medium
+kgpg (4:15.08.0-0ubuntu1) wily; urgency=medium
 
   [ Scarlett Clark ]
   * New upstream release
@@ -6,7 +6,7 @@ kgpg (4:15.08.0-0ubuntu1) UNRELEASED; urgency=medium
   [ Clive Johnston ]
   * new upstream release
 
- -- Clive Johnston <clivejo@aol.com>  Thu, 20 Aug 2015 13:38:28 +0000
+ -- Clive Johnston <clivejo@aol.com>  Wed, 26 Aug 2015 17:25:57 +0100
 
 kgpg (4:14.12.3-0ubuntu1) vivid; urgency=medium
 
