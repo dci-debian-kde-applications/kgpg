@@ -7,3 +7,6 @@ override_dh_strip:
 
 override_dh_auto_install:
 	dh_auto_install --destdir=debian/kgpg
+
+override_dh_shlibdeps:
+	$(overridden_command) -- -xkdepim-runtime

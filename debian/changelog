@@ -1,6 +1,7 @@
 kgpg (4:15.08.0-1~) UNRELEASED; urgency=medium
 
   * New upstream release (15.08.0).
+  * Avoid depending on kdepim-runtime. (Closes: #797670)
 
  -- Maximiliano Curia <maxy@debian.org>  Tue, 01 Sep 2015 17:09:20 +0200
 
