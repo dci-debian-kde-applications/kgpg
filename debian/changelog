@@ -1,3 +1,9 @@
+kgpg (4:15.08.2-0ubuntu1) UNRELEASED; urgency=medium
+
+  * New upstream release
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Fri, 09 Oct 2015 14:10:25 -0700
+
 kgpg (4:15.08.1-0ubuntu1) wily; urgency=medium
 
   * New upstream release (15.08.1)
