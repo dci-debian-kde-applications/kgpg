@@ -8,7 +8,7 @@ Uploaders: Fathi Boudra <fabo@debian.org>,
            George Kiagiadakis <kiagiadakis.george@gmail.com>,
            Eshat Cakar <info@eshat.de>,
            Maximiliano Curia <maxy@debian.org>
-Build-Depends: cmake,
+Build-Depends: cmake (>= 2.8.9~),
                debhelper (>= 9),
                kde-sc-dev-latest (>= 4:4.12),
                kdelibs5-dev,
@@ -18,8 +18,8 @@ Build-Depends: cmake,
                pkg-kde-tools (>= 0.12)
 Standards-Version: 3.9.6
 Homepage: http://www.kde.org/
-Vcs-Browser: http://anonscm.debian.org/cgit/pkg-kde/kde-applications/kgpg.git/
-Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-applications/kgpg.git
+Vcs-Browser: http://anonscm.debian.org/cgit/pkg-kde/applications/kgpg.git
+Vcs-Git: git://anonscm.debian.org/pkg-kde/applications/kgpg.git
 
 Package: kgpg
 Section: utils
@@ -30,18 +30,5 @@ Description: graphical front end for GNU Privacy Guard
  decrypt, sign, and verify files.  It features a simple editor for applying
  cryptography to short pieces of text, and can also quickly apply cryptography
  to the contents of the clipboard.
- .
- This package is part of the KDE Utilities module.
-
-Package: kgpg-dbg
-Section: debug
-Architecture: any
-Priority: extra
-Depends: kgpg (= ${binary:Version}), ${misc:Depends}
-Replaces: kdeutils-dbg (<< 4:4.8)
-Breaks: kdeutils-dbg (<< 4:4.8)
-Description: debugging symbols for kgpg
- This package contains debugging files used to investigate problems with
- binaries included in kgpg.
  .
  This package is part of the KDE Utilities module.

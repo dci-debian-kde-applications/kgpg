@@ -1,8 +1,33 @@
+kgpg (4:15.12.1-1ubuntu1) UNRELEASED; urgency=medium
+
+  * Debain merge: No remaining changes. 
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Thu, 04 Feb 2016 15:35:22 -0800
+
+kgpg (4:15.12.1-1) experimental; urgency=medium
+
+  * New upstream release (15.12.0).
+  * New upstream release (15.12.1).
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 01 Feb 2016 10:22:14 +0100
+
 kgpg (4:15.12.0-0ubuntu1) UNRELEASED; urgency=medium
 
   * New upstream release
 
  -- Clive Johnston <clivejo@aol.com>  Sat, 02 Jan 2016 13:54:29 +0000
+
+kgpg (4:15.08.3-1) unstable; urgency=medium
+
+  * New upstream release (15.08.3).
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 02 Dec 2015 12:38:33 +0100
+
+kgpg (4:15.08.2-1) unstable; urgency=medium
+
+  * New upstream release (15.08.2).
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 16 Oct 2015 08:06:45 +0200
 
 kgpg (4:15.08.2-0ubuntu1) wily; urgency=medium
 
@@ -16,6 +41,13 @@ kgpg (4:15.08.1-0ubuntu1) wily; urgency=medium
 
  -- Clive Johnston <clivejo@aol.com>  Tue, 22 Sep 2015 16:52:41 +0100
 
+kgpg (4:15.08.0-1) unstable; urgency=medium
+
+  * New upstream release (15.08.0).
+  * Avoid depending on kdepim-runtime. (Closes: #797670)
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 01 Sep 2015 17:48:21 +0200
+
 kgpg (4:15.08.0-0ubuntu1) wily; urgency=medium
 
   [ Scarlett Clark ]
@@ -26,11 +58,37 @@ kgpg (4:15.08.0-0ubuntu1) wily; urgency=medium
 
  -- Clive Johnston <clivejo@aol.com>  Wed, 26 Aug 2015 17:25:57 +0100
 
+kgpg (4:15.04.3-1) experimental; urgency=medium
+
+  * Team upload.
+
+  [ Maximiliano Curia ]
+  * New upstream release (15.04.0).
+  * New upstream release (15.04.2).
+
+  [ Jeremy Lainé ]
+  * New upstream release (15.04.3).
+
+ -- Jeremy Lainé <jeremy.laine@m4x.org>  Tue, 28 Jul 2015 14:17:07 +0200
+
+kgpg (4:14.12.3-1) experimental; urgency=medium
+
+  * New upstream release (14.12.3).
+
+ -- Maximiliano Curia <maxy@debian.org>  Sun, 29 Mar 2015 15:12:58 +0200
+
 kgpg (4:14.12.3-0ubuntu1) vivid; urgency=medium
 
   * New upstream release
 
  -- Scarlett Clark <sgclark@kubuntu.org>  Fri, 13 Mar 2015 13:44:31 -0700
+
+kgpg (4:14.12.2-1) experimental; urgency=medium
+
+  * New upstream release (14.12.2).
+  * Bump Standards-Version to 3.9.6, no changes needed.
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 23 Feb 2015 14:41:39 +0100
 
 kgpg (4:14.12.2-0ubuntu1) vivid; urgency=medium
 
@@ -54,11 +112,11 @@ kgpg (4:14.11.97-0ubuntu1) vivid; urgency=medium
 
 kgpg (4:14.11.95-0ubuntu1) vivid; urgency=medium
 
-  * Initial release for KDE applications 14.12 series 
+  * Initial release for KDE applications 14.12 series
    - Change maintainer to Debian/Kubuntu
-   - Fix Watch file applications locations 
+   - Fix Watch file applications locations
    - Fix VCS for new kde-applications location
-  * Debian merge, remaining changes: 
+  * Debian merge, remaining changes:
    - Remove EOL nepomuk-core-dev build depend.
 
  -- Scarlett Clark <sgclark@kubuntu.org>  Tue, 25 Nov 2014 18:42:07 +0000
@@ -513,7 +571,7 @@ kgpg (4:4.8.2-0ubuntu1) precise; urgency=low
 
 kgpg (4:4.8.1-0ubuntu1) precise; urgency=low
 
-  * New upstream release 
+  * New upstream release
 
  -- Philip Muškovac <yofel@kubuntu.org>  Sun, 04 Mar 2012 21:48:27 +0100
 
@@ -540,4 +598,3 @@ kgpg (4:4.7.90-0ubuntu1) precise; urgency=low
   * Initial package
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 16 Dec 2011 14:56:55 +0000
-
