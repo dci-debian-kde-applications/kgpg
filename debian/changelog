@@ -1,6 +1,7 @@
 kgpg (4:15.12.1-1ubuntu1) UNRELEASED; urgency=medium
 
-  * Debain merge: No remaining changes. 
+  * Debian merge: No remaining changes. 
+  * Fix typo. 
 
  -- Scarlett Clark <sgclark@kubuntu.org>  Thu, 04 Feb 2016 15:35:22 -0800
 
