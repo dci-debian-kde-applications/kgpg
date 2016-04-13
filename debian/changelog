@@ -1,3 +1,11 @@
+kgpg (4:15.12.1-2~1.gbp51ba00) UNRELEASED; urgency=medium
+
+  ** SNAPSHOT build @51ba00ca5f30261d65b16c3a1d97065f65383e52 **
+
+  * Bump Standards-Version to 3.9.8
+
+ -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Wed, 13 Apr 2016 11:52:34 +0200
+
 kgpg (4:15.12.1-1) experimental; urgency=medium
 
   * New upstream release (15.12.0).
