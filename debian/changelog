@@ -1,3 +1,12 @@
+kgpg (4:16.04.0-1~1.gbp2b85c4) UNRELEASED; urgency=medium
+
+  ** SNAPSHOT build @2b85c4e8b88f1e9dcdd114e4f7ef5ee501c0ab78 **
+
+  * Bump Standards-Version to 3.9.8
+  * UNRELEASED
+
+ -- Automatic packaging <jenkins@amadeus.gnuservers.com.ar>  Thu, 21 Apr 2016 01:50:14 +0200
+
 kgpg (4:15.12.1-1) experimental; urgency=medium
 
   * New upstream release (15.12.0).
