@@ -1,19 +1,14 @@
-kgpg (4:16.04.0-1~2.gbp521e0d) UNRELEASED; urgency=medium
-
-  ** SNAPSHOT build @521e0d2f9dd81b343c91ff84ea0bf83947f8c647 **
+kgpg (4:16.04.0-1) unstable; urgency=medium
 
   [ Automatic packaging ]
-  ** SNAPSHOT build @2b85c4e8b88f1e9dcdd114e4f7ef5ee501c0ab78 **
-
   * Bump Standards-Version to 3.9.8
-  * UNRELEASED
 
   [ Maximiliano Curia ]
   * Replace the "Historical name" ddeb-migration by its "Modern, clearer" replacement dbgsym-migration.
   * Add upstream metadata (DEP-12)
   * debian/control: Update Vcs-Browser and Vcs-Git fields
 
- -- Maximiliano Curia <maxy@gnuservers.com.ar>  Mon, 09 May 2016 11:50:19 +0200
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 21 May 2016 20:15:13 +0200
 
 kgpg (4:15.12.1-1) experimental; urgency=medium
 
