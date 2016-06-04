@@ -5,6 +5,10 @@ kgpg (4:16.04.1-0r1) UNRELEASED; urgency=medium
   * Backport upstream commit 3349d8a48ad1b957859a16643c912c4febec73b0 to fix
     a sporadic build failure; patch
     upstream_include-QStringList-instead-of-fwd-declarations.patch.
+  * Do not force local installation to debian/tmp anymore, let it install
+    directly in the package directory
+    - remove the kgpg.install file, which was just copying everything
+      installed in /usr, and is no more needed
 
  -- Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 04 Jun 2016 08:55:37 +0200
 
