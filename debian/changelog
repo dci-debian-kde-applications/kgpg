@@ -2,6 +2,9 @@ kgpg (4:16.04.1-0r1) UNRELEASED; urgency=medium
 
   [ Pino Toscano ]
   * New upstream release.
+  * Backport upstream commit 3349d8a48ad1b957859a16643c912c4febec73b0 to fix
+    a sporadic build failure; patch
+    upstream_include-QStringList-instead-of-fwd-declarations.patch.
 
  -- Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 04 Jun 2016 08:55:37 +0200
 
