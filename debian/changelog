@@ -1,8 +1,28 @@
-kgpg (4:16.04.1-0neon) xenial; urgency=medium
+kgpg (4:16.04.1-1) unstable; urgency=medium
 
-  * New release
+  * Team upload.
+  * New upstream release.
+  * Backport upstream commit 3349d8a48ad1b957859a16643c912c4febec73b0 to fix
+    a sporadic build failure; patch
+    upstream_include-QStringList-instead-of-fwd-declarations.patch.
+  * Do not force local installation to debian/tmp anymore, let it install
+    directly in the package directory
+    - remove the kgpg.install file, which was just copying everything
+      installed in /usr, and is no more needed
 
- -- Neon CI <neon@kde.org>  Wed, 18 May 2016 18:15:39 +0200
+ -- Pino Toscano <pino@debian.org>  Sat, 04 Jun 2016 09:24:25 +0200
+
+kgpg (4:16.04.0-1) unstable; urgency=medium
+
+  [ Automatic packaging ]
+  * Bump Standards-Version to 3.9.8
+
+  [ Maximiliano Curia ]
+  * Replace the "Historical name" ddeb-migration by its "Modern, clearer" replacement dbgsym-migration.
+  * Add upstream metadata (DEP-12)
+  * debian/control: Update Vcs-Browser and Vcs-Git fields
+
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 21 May 2016 20:15:13 +0200
 
 kgpg (4:15.12.1-1) experimental; urgency=medium
 
