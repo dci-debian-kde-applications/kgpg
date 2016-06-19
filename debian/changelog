@@ -1,10 +1,9 @@
-kgpg (4:16.04.2-1~1.gbp098664) UNRELEASED; urgency=medium
+kgpg (4:16.04.2-1) unstable; urgency=medium
 
-  ** SNAPSHOT build @098664f6ef3b619c3bb673f3b410b4f38fa49a27 **
-
+  [ Automatic packaging ]
   * Refresh patches
 
- -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Wed, 15 Jun 2016 01:50:31 +0200
+ -- Maximiliano Curia <maxy@debian.org>  Sun, 19 Jun 2016 11:08:07 +0200
 
 kgpg (4:16.04.1-1) unstable; urgency=medium
 
