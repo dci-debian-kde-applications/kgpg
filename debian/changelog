@@ -1,3 +1,11 @@
+kgpg (4:16.08.0-1~1.gbp1cd2c6) UNRELEASED; urgency=medium
+
+  ** SNAPSHOT build @1cd2c6020b83f06fb55cec766ab2755bbd3e2301 **
+
+  * UNRELEASED
+
+ -- Maximiliano Curia <jenkins@gnuservers.com.ar>  Thu, 18 Aug 2016 19:50:21 +0200
+
 kgpg (4:16.04.2-1) unstable; urgency=medium
 
   [ Automatic packaging ]
