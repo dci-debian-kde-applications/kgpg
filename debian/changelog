@@ -1,3 +1,11 @@
+kgpg (4:16.08.3-1~1.gbpf8c222) UNRELEASED; urgency=medium
+
+  ** SNAPSHOT build @f8c222739a4d53849a62b23fcbe76900d5f0dd04 **
+
+  * UNRELEASED
+
+ -- Maximiliano Curia <jenkins@gnuservers.com.ar>  Thu, 10 Nov 2016 19:50:30 +0100
+
 kgpg (4:16.08.2-1) unstable; urgency=medium
 
   * New upstream release (16.08.2)
