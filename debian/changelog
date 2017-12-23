@@ -11,6 +11,9 @@ kgpg (4:17.08.3-1) UNRELEASED; urgency=medium
   * Remove not needed Build-Deps.
   * Bump debhelper build-dep and compat to 10.
 
+  [ Pino Toscano ]
+  * Remove unused kio-dev build dependency.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 15 Dec 2017 16:49:10 +0100
 
 kgpg (4:17.08.0-1) experimental; urgency=medium
