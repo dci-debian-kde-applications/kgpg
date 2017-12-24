@@ -39,7 +39,7 @@ Vcs-Git: https://anonscm.debian.org/git/pkg-kde/applications/kgpg.git
 Package: kgpg
 Section: utils
 Architecture: any
-Depends: gnupg | gnupg2, ${misc:Depends}, ${shlibs:Depends}
+Depends: gnupg, ${misc:Depends}, ${shlibs:Depends}
 Breaks: ${kde-l10n:all}
 Replaces: ${kde-l10n:all}
 Description: graphical front end for GNU Privacy Guard
